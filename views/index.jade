@@ -1,0 +1,14 @@
+extends layout
+
+block content
+  h1= "掛算計算機"
+  form(method='POST' action='/')
+    p
+      | 速度(knot)
+      br
+      input(type='text' name='opr1')
+    p
+      input(type='submit' value='送信する')
+  p
+    div(id='calc')=output1
+    div(id='result')=output2
